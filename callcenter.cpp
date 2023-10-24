@@ -32,7 +32,7 @@ void Callcenter::dialog(){
         cout<<"\t 1: Termin anlegen"<<endl;
         cout<<"\t 2:Termin loeschen"<<endl;
         cout<<"\t 3:Arztpraxis anlegen "<<endl;
-        cout<<"\t 4:Alle anzeigen "<<endl;
+        cout<<"\t 4:Alle Termine anzeigen "<<endl;
         cout<<"\t 0: Program beednden"<<endl;
         cout<<"Bitte Auswaehlen"<<endl;
 
@@ -43,14 +43,14 @@ void Callcenter::dialog(){
                 cout<<"Bitte Ihren Namen eingeben"<<endl;
                 cin>>n;
 
-                cout<<"Welcher Arztpraxis? Name der Arzt eingaben."<<endl;
+                cout<<"Welcher Arztpraxis? Name der Arzt eingeben."<<endl;
                 for(unsigned int j{};j<praxisListe.size();j++){
                     cout<<"\t"<<j+1<<": ";
                     cout<<praxisListe.at(j).get_PraxisName()<<endl;
                 }
                 cin>>praxis;
 
-                cout<<"Bitte Impfstofftyp eingeben"<<endl;
+                cout<<"Bitte Impfstofftyp eingeben (1,2,3..)"<<endl;
                 cout<<"1: Biontech"<<endl;
                 cout<<"2: Moderna"<<endl;
                 cout<<"3: AstraZeneca"<<endl;
